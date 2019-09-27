@@ -2,7 +2,7 @@
 A CUDA GPU implementation of Porter Stemmer algorithm to raw text preprocessing
 
 This project is a combination of C++ and CUDA binaries, some workloads are operated and handled on CPU, and some workloads are handled and processed on GPU.
-The basic idea is CPU will read the raw file, and then divide the raw file into multiple small chunks, then pass small chunks to GPU for parallel processing and wait for results from GPU threads, once CPU receives all GPU results, CPU will aggregate all results togehter (put them in right order, append broken strings etc) then return the final results. 
+The basic idea is CPU will read the raw file, and then divide the raw file into multiple small chunks, then pass small chunks to GPU for parallel processing and wait for results from GPU threads, once CPU receives all GPU results, CPU will aggregate all results (put them in right order, append broken strings etc) then return the final results. 
 
 
 # Components

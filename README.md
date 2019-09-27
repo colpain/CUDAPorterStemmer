@@ -6,7 +6,7 @@ The basic idea is CPU will read the raw file, and then divide the raw file into 
 
 
 # Components
-CUDAPorterStemmer/PorterStemmingAlgorithm/all.cuh specifies dependencies
-CUDAPorterStemmer/PorterStemmingAlgorithm/data_handler.cuh specifies the CPU data handler utilities
-CUDAPorterStemmer/PorterStemmingAlgorithm/utils.cuh specifies mappings and the GPU prallelization stratigies (basially a linear programming optimization to decide the work load size)
-CUDAPorterStemmer/PorterStemmingAlgorithm/stemmer_function.cuh speicifies the CUDA processing components (all inlined in headewr file because of some bugs, i dont remember the details) 
+- CUDAPorterStemmer/PorterStemmingAlgorithm/all.cuh specifies dependencies
+- CUDAPorterStemmer/PorterStemmingAlgorithm/data_handler.cuh specifies the CPU data handler utilities
+- CUDAPorterStemmer/PorterStemmingAlgorithm/utils.cuh specifies mappings and the GPU prallelization stratigies (basially a linear programming optimization to decide the work load size)
+- CUDAPorterStemmer/PorterStemmingAlgorithm/stemmer_function.cuh speicifies the CUDA processing components (all inlined in headewr file because of some bugs, i dont remember the details) 

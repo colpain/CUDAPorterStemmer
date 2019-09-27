@@ -10,3 +10,5 @@ The basic idea is CPU will read the raw file, and then divide the raw file into 
 - CUDAPorterStemmer/PorterStemmingAlgorithm/data_handler.cuh specifies the CPU data handler utilities
 - CUDAPorterStemmer/PorterStemmingAlgorithm/utils.cuh specifies mappings and the GPU prallelization stratigies (basially a linear programming optimization to decide the work load size)
 - CUDAPorterStemmer/PorterStemmingAlgorithm/stemmer_function.cuh speicifies the CUDA processing components (all inlined in headewr file because of some bugs, i dont remember the details) 
+- CUDAPorterStemmer/PorterStemmingAlgorithm/kernel.cu speicifies the main file and also some CPU utils to cleaning up after recive the results from GPU threads
+- CUDAPorterStemmer/PorterStemmingAlgorithm/porter_stemming_cpu.cuh specifies the CPU version of porter stammer for benchmarking purpose
